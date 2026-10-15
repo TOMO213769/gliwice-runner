@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=4]
+
+[ext_resource path="res://scripts/Player.gd" type="Script" id=1]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource( 1 )
+position = Vector3( 0, 1.0, 0 )
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = BoxMesh {
+    size = Vector3(0.6,1.6,0.4)
+}
+
+[node name="CollisionShape" type="CollisionShape3D" parent="."]
+shape = CapsuleShape3D {
+    radius = 0.3
+    height = 1.2
+}
+
+[node name="LabelBack" type="Label3D" parent="."]
+text = "ZSTI Gliwice"
+vertical_alignment = 1
+horizontal_alignment = 1
+position = Vector3(0,0.6,-0.25)

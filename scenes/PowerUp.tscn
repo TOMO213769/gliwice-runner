@@ -1,0 +1,9 @@
+[gd_scene load_steps=1 format=4]
+
+[node name="PowerUp" type="Area3D"]
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = CapsuleMesh {
+    radius = 0.3
+    height = 0.8
+}
